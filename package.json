@@ -1,16 +1,16 @@
 {
   "name": "karam-library-website",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "Arabic RTL website and order management for Karam Library",
   "main": "server.js",
-  "scripts": {"start": "node server.js"},
-  "engines": {"node": ">=20"},
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=20" },
   "dependencies": {
-    "better-sqlite3": "^11.8.1",
+    "@supabase/supabase-js": "^2.57.0",
     "express": "^4.21.2",
     "express-session": "^1.18.1",
-    "multer": "^1.4.5-lts.1",
-    "helmet": "^8.0.0"
+    "helmet": "^8.0.0",
+    "multer": "^1.4.5-lts.1"
   }
 }
