@@ -25,7 +25,8 @@ create table if not exists public.orders (
 
 alter table public.products enable row level security;
 alter table public.orders enable row level security;
-
+drop policy if exists "Public can view active products" on public.products;
+drop policy if exists "Public can submit orders" on public.orders;
 -- The website server uses the Supabase secret key, which bypasses RLS.
 -- No public policies are created: customer data and uploaded files stay private.
 
